@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw1" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw2" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw3" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+        </tr>
+        <tr>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw4" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw5" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw6" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+        </tr>
+        <tr>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw7" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw8" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+            <td style="background-color:red; width: 50px; height:50px;" ><span id="draw9" onclick="myfunction(this.id)" style="padding: 15px; font-size: 30px;"></span></td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
+
+<script>
+
+    var counter = 0;
+
+    function myfunction (elmnt) {
+        var x = "X";
+        var o = "O"
+
+        if((counter % 2 ) == 0){
+            document.getElementById(elmnt).innerHTML = x;
+            counter += 1;
+
+        }else if((counter % 2) == 1){
+         document.getElementById(elmnt).innerHTML = o;
+            counter += 1;
+        }
+    };
+
+    // $(function(){
+    //     $('table').each(function(){
+    //         $('tr').each(function(i){
+    //             var firstRow
+    //         }).get();
+    //     })
+    // })
+
+</script>
